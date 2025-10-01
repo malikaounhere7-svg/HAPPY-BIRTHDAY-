@@ -1,71 +1,46 @@
-# HAPPY-BIRTHDAY-
-Hellows my love! Cheers to 15! Ur old now eheheheh, this is a little smth I've been working on IK ITS NOT ME SINGING ITTT cuz obv Im not a singer and idk shit Abt it but I think I knew a lil smth to use audio presets and make a song for u :D the lyrics are from the bottom of my heart and I mean it love. Focus on em and enjoyyyy mwah&lt;3to u
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday ❤️</title>
+  <title>Happy Birthday My Twin 💖</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       height: 100vh;
-      background: radial-gradient(circle at top, #0a0a23, #000);
-      background-image: url('https://i.ibb.co/wwL0cG6/stars-bg.gif'); /* starry background */
-      background-size: cover;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      flex-direction: column;
+      background: url("bg.jpg") no-repeat center center/cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
     h1 {
-      font-size: 3rem;
-      color: #ffccff;
-      text-shadow: 0 0 20px #ff66ff, 0 0 40px #ff99ff;
-    }
-    p {
-      font-size: 1.3rem;
-      margin: 20px 0;
-      color: #ffd6ff;
-      text-shadow: 0 0 10px #ff99ff;
-      max-width: 600px;
+      font-size: 2.5em;
+      margin-bottom: 20px;
     }
     button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 25px;
-      background: linear-gradient(45deg, #ff66cc, #ff99ff);
+      background: rgba(255,255,255,0.2);
+      border: 2px solid white;
       color: white;
+      font-size: 1.2em;
+      padding: 12px 25px;
+      border-radius: 10px;
       cursor: pointer;
-      box-shadow: 0 0 15px #ff99ff;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
     button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #ff66ff;
-    }
-    audio {
-      display: none;
+      background: rgba(255,255,255,0.5);
     }
   </style>
 </head>
 <body>
-  <h1>Happy Birthday, My Love ❤️</h1>
-  <p>
-    Under the stars tonight, I just want to remind you...  
-    You are my twin, my dream, my forever.  
-    This song is only for you 💫
-  </p>
+  <h1>Happy Birthday, My Twin 💖</h1>
+  <button onclick="document.getElementById('song').play()">PLAYYYYYYYYYYYYYY!</button>
   
-  <button onclick="document.getElementById('song').play()">Play Our Song 🎶</button>
-  <audio id="song" controls>
-    <source src="song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <!-- Replace song.m4a with your uploaded file name -->
+  <audio id="song" src="song.m4a"></audio>
 </body>
 </html>
